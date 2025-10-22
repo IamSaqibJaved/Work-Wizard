@@ -7,7 +7,7 @@ const iconCommon = {
   height: 40,
   viewBox: '0 0 24 24',
   fill: 'none',
-  stroke: '#83b4cc',
+  stroke: '#7c3aed',
   strokeWidth: 1.8,
   strokeLinecap: 'round',
   strokeLinejoin: 'round',
@@ -94,110 +94,159 @@ function IconStore() {
 }
 
 const SERVICES = [
+  
   {
-    title: 'Custom Software Development',
-    icon: IconCode,
+    title: 'Research Guidance',
+    icon: IconCloud,
     bullets: [
-      'End-to-end architecture and delivery',
-      'Clean, scalable, maintainable code',
-      'API-first, modular systems',
-      'Security and performance baked in',
+      'Topic refinement and proposal coaching',
+      'Literature review strategy and sourcing',
+      'Methodology advising and best practices',
+      'Ethical, skills-building support throughout',
     ],
   },
+  
+  
   {
     title: 'Web Development',
     icon: IconWeb,
     bullets: [
-      'High-performance web apps',
-      'Modern UI frameworks and SSR',
-      'Accessibility and SEO best practices',
-      'Analytics and optimization',
+      'Modern, responsive websites',
+      'Performance, SEO and accessibility focus',
+      'API integration and CMS setup',
+      'Ongoing support and maintenance',
     ],
   },
   {
-    title: 'Mobile Application Development',
+    title: 'App Development',
     icon: IconMobile,
     bullets: [
-      'iOS and Android development',
-      'Offline-first and sync patterns',
-      'Native performance, polished UX',
-      'CI/CD and store deployment',
+      'Cross‑platform mobile apps',
+      'Scalable architecture and testing',
+      'Backend and cloud integration',
+      'Deployment and release support',
     ],
   },
   {
-    title: 'SaaS Development',
-    icon: IconCloud,
+    title: 'Academic Coaching & Tutoring',
+    icon: IconMobile,
     bullets: [
-      'Multi-tenant architectures',
-      'Subscription and billing flows',
-      'Observability and SLOs',
-      'Scalable cloud infrastructure',
+      'One-on-one guidance and concept mastery',
+      'Exam preparation and study strategies',
+      'Module brief interpretation and planning',
+      'Structured learning plans tailored to you',
     ],
   },
   {
-    title: 'Digital Marketing',
+    title: 'Editing, Formatting & Referencing',
     icon: IconMegaphone,
     bullets: [
-      'Performance-driven campaigns',
-      'Brand positioning and strategy',
-      'Content and creative ops',
-      'Reporting and growth loops',
+      'Professional editing for clarity and cohesion',
+      'APA, Harvard, MLA and more formatting',
+      'Citation review and reference checks',
+      'Proofreading for grammar and consistency',
     ],
   },
   {
-    title: 'Search Engine Optimization (SEO)',
-    icon: IconSearch,
-    bullets: [
-      'Technical SEO audits',
-      'On-page and schema optimization',
-      'Content strategy and backlinks',
-      'Core Web Vitals improvements',
-    ],
-  },
-  {
-    title: 'Shopify Store Development',
+    title: 'Shopify Store Creation',
     icon: IconCart,
     bullets: [
-      'Custom themes and apps',
-      'Optimized product experiences',
-      'Checkout and subscription flows',
-      'Integration with ERP/CRM',
+      'Complete store setup end‑to‑end',
+      'Custom theme design and branding',
+      'Products, payments and app integrations',
+      'Conversion‑oriented configurations',
     ],
   },
   {
-    title: 'AI Automation',
+    title: 'eBay Dropshipping (USA & UK)',
+    icon: IconStore,
+    bullets: [
+      'Professional store setup and optimization',
+      'Product research from trusted suppliers',
+      'Price automation and inventory updates',
+      'Order handling and growth guidance',
+    ],
+  },
+  {
+    title: 'Amazon FBM Setup & Management',
+    icon: IconStore,
+    bullets: [
+      'Seller account setup and optimization',
+      'Listing creation and keyword optimization',
+      'Inventory, shipping and returns workflows',
+      'End‑to‑end order handling support',
+    ],
+  },
+  {
+    title: 'UI/UX Design (Figma)',
+    icon: IconCode,
+    bullets: [
+      'User‑centered wireframes and prototypes',
+      'Design systems and component libraries',
+      'Usability and accessibility principles',
+      'Developer‑ready handoff assets',
+    ],
+  },
+  {
+    title: 'Presentations with Speaker Notes',
+    icon: IconMegaphone,
+    bullets: [
+      'Engaging slides tailored to your audience',
+      'Clear narratives and visual storytelling',
+      'Speaker notes and rehearsal guidance',
+      'Brand‑consistent templates and assets',
+    ],
+  },
+  {
+    title: 'Originality & Academic Integrity Support',
+    icon: IconSearch,
+    bullets: [
+      'Guidance on paraphrasing and citation',
+      'Understanding similarity reports',
+      'Best practices to avoid plagiarism',
+      'Uphold academic policies with confidence',
+    ],
+  },
+  {
+    title: 'Data Analysis Coaching (SPSS, Excel, Python)',
     icon: IconRobot,
     bullets: [
-      'Intelligent process automation',
-      'Machine learning integration',
-      'Predictive analytics solutions',
-      'AI-powered decision support',
+      'Statistical planning and analysis walkthroughs',
+      'Code and formula reviews with explanations',
+      'Data visualization best practices',
+      'Results interpretation coaching',
     ],
   },
 ];
 
 export default function Services() {
   return (
-    <section className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 sm:px-8">
-        <div className=" mb-16">
-          <div className="inline-flex items-center space-x-3 mb-6">
-            <div className="w-12 h-0.5 bg-gradient-to-r from-[#83b4cc] to-[#5a9bb8]"></div>
-            <span className="text-[#83b4cc] font-semibold text-sm uppercase tracking-wider" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <section className="relative bg-gradient-to-br from-gray-50 via-white to-purple-50 py-14 sm:py-14 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 20% 20%, #7c3aed 0%, transparent 50%), 
+                           radial-gradient(circle at 80% 80%, #6366f1 0%, transparent 50%)`,
+        }}></div>
+      </div>
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 relative z-10">
+        <div className="mb-20">
+          <div className="mb-6">
+            <span className="text-purple-600 text-lg font-bold tracking-wider uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               Our Services
             </span>
-            <div className="w-12 h-0.5 bg-gradient-to-l from-[#83b4cc] to-[#5a9bb8]"></div>
+            <div className="w-16 h-0.5 bg-purple-600 mt-2"></div>
           </div>
           
           <h2
-            className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
             How We Can Help You
           </h2>
-                      <p className="text-lg text-gray-600 max-w-3xl " style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Transform your business and ideas with our tailored solutions. Whether you&apos;re aiming to revolutionize your operations, enhance user experiences, or expand your reach, we provide the tools and technologies to make it happen.
-            </p>
+          <p className="text-base text-gray-600 max-w-4xl leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            From ethical academic support and research guidance to full‑stack development and e‑commerce setups, we help you achieve your goals with quality, transparency, and on‑time delivery.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -205,27 +254,30 @@ export default function Services() {
             const Icon = service.icon;
             return (
               <div key={index} className="group [perspective:1000px]">
-                <div className="relative h-64 w-full rounded-2xl border border-gray-200 bg-white shadow-sm transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div className="relative h-72 w-full rounded-2xl border border-gray-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-hover:scale-105">
                   {/* Front */}
-                  <div className="absolute inset-0 p-6 backface-hidden">
-                    <div className="h-12 w-12 grid place-items-center rounded-xl bg-[#83b4cc]/10">
+                  <div className="absolute inset-0 p-8 backface-hidden [transform:rotateY(0deg)] flex flex-col">
+                    <div className="h-16 w-16 grid place-items-center rounded-2xl bg-gradient-to-br from-purple-100 to-indigo-100 group-hover:from-purple-200 group-hover:to-indigo-200 transition-colors duration-300">
                       <Icon />
                     </div>
-                    <h3 className="mt-4 text-xl font-bold text-gray-900" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    <h3 className="mt-6 text-xl font-bold text-gray-900 group-hover:text-purple-700 transition-colors duration-300" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       {service.title}
                     </h3>
-                    <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    <p className="mt-3 text-xs text-gray-600 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       Explore how we design and deliver this service to match your goals.
                     </p>
                   </div>
                   {/* Back */}
-                  <div className="absolute inset-0 p-6 rotate-y-180 backface-hidden [transform:rotateY(180deg)]">
-                    <h4 className="text-sm font-semibold text-gray-900" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                  <div className="absolute inset-0 p-8 backface-hidden [transform:rotateY(180deg)] flex flex-col bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl">
+                    <h4 className="text-base font-bold text-purple-700 mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       What you get
                     </h4>
-                    <ul className="mt-3 list-disc pl-4 space-y-2 text-sm text-gray-700" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    <ul className="space-y-3 text-xs text-gray-700 flex-1" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       {service.bullets.map((b, i) => (
-                        <li key={i}>{b}</li>
+                        <li key={i} className="flex items-start">
+                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span>{b}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>

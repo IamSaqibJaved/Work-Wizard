@@ -3,66 +3,85 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Project1 from '../assets/Project1.jpg';
-import Project2 from '../assets/Project2.jpg';
-import Project3 from '../assets/Project3.jpg';
-import Project4 from '../assets/Project4.jpg';
-
+import Project1 from '../assets/Project2.png';
+import Project2 from '../assets/Project1.png';
+import Project3 from '../assets/Project3.png';
+import Project4 from '../assets/Project4.png';
+import Project5 from '../assets/Project5.png';
+import Project6 from '../assets/Project6.png';
+// import Project7 from '../assets/Project7.png';
 const PROJECTS = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
+    title: 'SwiftRoute',
+    image: Project6,
+    description: 'Revolutionizing E-commerce Logistics with AI-Powered Solutions',
+    technologies: ['MERN', 'FLutter', 'AI/ML'],
     category: 'Web Development',
-    image: Project1,
-    description: 'Modern e-commerce solution with advanced features',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    link: '/projects/ecommerce-platform'
+    link: '/portfolio'
   },
-  {
-    id: 2,
-    title: 'Mobile Banking App',
-    category: 'Mobile Development',
-    image: Project2,
-    description: 'Secure banking application with biometric authentication',
-    technologies: ['React Native', 'Firebase', 'AWS'],
-    link: '/projects/mobile-banking'
-  },
+  // {
+  //   id: 2,
+  //   title: 'Rydely',
+  //   image: Project7,
+  //   description: 'Achieving Operational Excellence in Supply Chain Management',
+  //   technologies: ['UI/UX', 'Figma'],
+  //   category: 'UI/UX Design',
+  //   link: '/portfolio'
+  // },
   {
     id: 3,
-    title: 'AI-Powered Analytics',
-    category: 'AI & Machine Learning',
-    image: Project3,
-    description: 'Intelligent data analytics platform with predictive insights',
-    technologies: ['Python', 'TensorFlow', 'Django'],
-    link: '/projects/ai-analytics'
+    title: 'Supply Chain Management',
+    image: Project1,
+    description: 'Achieving Operational Excellence in Supply Chain Management',
+    technologies: [],
+    link: '/portfolio'
   },
   {
     id: 4,
-    title: 'Healthcare Management System',
-    category: 'Enterprise Solutions',
-    image: Project4,
-    description: 'Comprehensive healthcare management and patient care system',
-    technologies: ['Angular', 'Java', 'PostgreSQL'],
-    link: '/projects/healthcare-system'
+    title: 'Dissertation',
+    category: '',
+    image: Project2,
+    description: 'Cross-Cultural Communication and Employee Motivation in the Indian Pharmaceutical Industry',
+    technologies: [],
+    link: '/portfolio'
   },
   {
     id: 5,
-    title: 'Real Estate Platform',
-    category: 'Web Development',
-    image: Project1,
-    description: 'Property listing and management platform with virtual tours',
-    technologies: ['Vue.js', 'Laravel', 'MySQL'],
-    link: '/projects/real-estate'
+    title: 'Business Plan',
+    category: '',
+    image: Project3,
+    description: 'The Masala Vault WrapWay',
+    technologies: [],
+    link: '/portfolio'
   },
   {
     id: 6,
-    title: 'IoT Smart Home System',
-    category: 'IoT & Hardware',
-    image: Project2,
-    description: 'Connected home automation system with mobile control',
-    technologies: ['Arduino', 'Raspberry Pi', 'Node.js'],
-    link: '/projects/smart-home'
-  }
+    title: 'Deep Learning',
+    category: '',
+    image: Project4,
+    description: 'Wildlife Image Classification using Deep Learning',
+    technologies: ['Python', 'CNNs', 'ResNet50'],
+    link: '/portfolio'
+  },
+  {
+    id: 7,
+    title: 'Level III Diploma',
+    category: '',
+    image: Project5,
+    description: 'Level III Diploma of Social Health Care',
+    technologies: [],
+    link: '/portfolio'
+  },
+  // {
+  //   id: 8,
+  //   title: 'IoT Smart Home System',
+  //   category: '',
+  //   image: Project2,
+  //   description: 'Connected home automation system with mobile control',
+  //   technologies: ['Arduino', 'Raspberry Pi', 'Node.js'],
+  //   link: '/portfolio'
+  // }
 ];
 
 export default function Portfolio() {
@@ -75,7 +94,7 @@ export default function Portfolio() {
         <div className="absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-r from-[#83b4cc]/8 to-[#5a9bb8]/8 rounded-full blur-3xl" />
         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-gradient-to-l from-[#5a9bb8]/8 to-[#83b4cc]/8 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-[#83b4cc]/5 rounded-full blur-2xl" />
-        
+
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 opacity-3">
           <div className="h-full w-full bg-grid-gray-400/10 bg-[size:40px_40px]"></div>
@@ -86,24 +105,24 @@ export default function Portfolio() {
         {/* Clean Header Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-3 mb-6">
-            <div className="w-12 h-0.5 bg-gradient-to-r from-[#83b4cc] to-[#5a9bb8] rounded-full"></div>
-            <span className="text-[#83b4cc] font-semibold text-sm uppercase tracking-wider" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full"></div>
+            <span className="text-indigo-600 text-lg font-bold tracking-wider uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               Portfolio
             </span>
-            <div className="w-12 h-0.5 bg-gradient-to-l from-[#83b4cc] to-[#5a9bb8] rounded-full"></div>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full"></div>
           </div>
-          
-          <h2 
-            className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6"
-            style={{ fontFamily: 'Montserrat, sans-serif' }}
+
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight"
+              style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
             Explore Our
-            <span className="block bg-gradient-to-r from-[#83b4cc] to-[#5a9bb8] bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Recent Projects
             </span>
           </h2>
-          
-          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+
+          <p className="text-base text-gray-600 leading-relaxed max-w-3xl mx-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Explore our diverse portfolio and discover how we&apos;re pushing boundaries and shaping the future with innovative solutions across various industries.
           </p>
         </div>
@@ -111,8 +130,8 @@ export default function Portfolio() {
         {/* Images Only Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {PROJECTS.map((project) => (
-            <Link 
-              href={project.link} 
+            <Link
+              href={project.link}
               key={project.id}
               className="group"
               onMouseEnter={() => setHoveredProject(project.id)}
@@ -125,26 +144,27 @@ export default function Portfolio() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                    className="object-center transition-transform duration-500 group-hover:scale-100"
                   />
-                  
+
                   {/* Always Visible Title */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                     <h3 className="text-lg font-bold text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       {project.title}
                     </h3>
                   </div>
-                  
+
                   {/* Category Badge */}
-                  <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 border border-white/50" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                      {project.category}
-                    </span>
-                  </div>
-                  
+                  {project.category && (
+                    <div className="absolute top-3 left-3">
+                      <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700 border border-white/50" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                        {project.category}
+                      </span>
+                    </div>
+                  )}
                   {/* Gradient Overlay on Hover */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  
+
                   {/* Hover Overlay Content */}
                   <div className="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                     <div className="space-y-3">
@@ -154,11 +174,11 @@ export default function Portfolio() {
                       <p className="text-white/90 text-sm leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                         {project.description}
                       </p>
-                      
+
                       {/* Technologies */}
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.slice(0, 3).map((tech, index) => (
-                          <span 
+                          <span
                             key={index}
                             className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs text-white border border-white/30"
                             style={{ fontFamily: 'Montserrat, sans-serif' }}
@@ -172,7 +192,7 @@ export default function Portfolio() {
                           </span>
                         )}
                       </div>
-                      
+
                       {/* View Details Link */}
                       <div className="flex items-center justify-between pt-2">
                         <span className="text-white text-sm font-semibold flex items-center group-hover:translate-x-2 transition-transform duration-300" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -192,9 +212,9 @@ export default function Portfolio() {
 
         {/* Clean Call to Action */}
         <div className="text-center">
-          <Link 
+          <Link
             href="/portfolio"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#83b4cc] to-[#5a9bb8] text-white font-semibold rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 transform"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 transform"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
             View Our All Work

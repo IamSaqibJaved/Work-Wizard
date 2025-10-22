@@ -1,0 +1,73 @@
+{
+  "name": "Work Wizard - Professional Software Development & Automation",
+  "short_name": "Work Wizard",
+  "description": "Professional software development, automation, and project management services for businesses and academics.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["business", "productivity", "technology"],
+  "icons": [
+    {
+      "src": "/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/heroLanding.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About Us",
+      "short_name": "About",
+      "description": "Learn about Work Wizard's team and mission",
+      "url": "/aboutus",
+      "icons": [
+        {
+          "src": "/Logo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "description": "View our project portfolio and case studies",
+      "url": "/portfolio",
+      "icons": [
+        {
+          "src": "/Logo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Read our latest insights and tutorials",
+      "url": "/blogs",
+      "icons": [
+        {
+          "src": "/Logo.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
