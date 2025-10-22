@@ -149,7 +149,7 @@ export default function AboutUs() {
                 We help businesses streamline their processes, boost productivity, and achieve remarkable efficiency 
                 through cutting-edge technology and intelligent solutions.{' '}
                 <a 
-                  href="/about" 
+                  href="/AboutUs" 
                   className="text-purple-600 hover:text-purple-700 font-semibold transition-colors duration-200 underline decoration-2 underline-offset-2 hover:decoration-purple-400"
                 >
                   Read More

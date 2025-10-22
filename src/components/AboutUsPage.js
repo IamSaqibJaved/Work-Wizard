@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Footer from './Footer';
 import Reveal from './utils/Reveal';
 
@@ -371,17 +372,10 @@ export default function AboutUs() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <button
+            <Link
+              href="/#contact"
               className="group relative inline-flex items-center justify-center text-center px-6 py-3 overflow-hidden text-sm font-semibold text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 rounded-lg shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
-              onClick={() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  window.location.hash = '#contact';
-                }
-              }}
             >
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center justify-center space-x-2">
@@ -390,9 +384,9 @@ export default function AboutUs() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </span>
-            </button>
+            </Link>
 
-            <a
+            <Link
               href="/portfolio"
               className="group inline-flex items-center justify-center text-center px-6 py-3 text-sm font-semibold text-purple-200 border-2 border-purple-400/60 rounded-lg hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-indigo-500/20 hover:border-purple-400 transition-all duration-300 hover:scale-105 hover:-translate-y-1 backdrop-blur-sm"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
@@ -401,7 +395,7 @@ export default function AboutUs() {
               <svg className="w-4 h-4 transform group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

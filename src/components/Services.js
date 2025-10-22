@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 
 const iconCommon = {
   width: 40,
@@ -220,6 +220,18 @@ const SERVICES = [
 ];
 
 export default function Services() {
+  const [flippedCards, setFlippedCards] = useState(new Set());
+
+  const handleCardClick = (index) => {
+    const newFlippedCards = new Set(flippedCards);
+    if (newFlippedCards.has(index)) {
+      newFlippedCards.delete(index);
+    } else {
+      newFlippedCards.add(index);
+    }
+    setFlippedCards(newFlippedCards);
+  };
+
   return (
     <section className="relative bg-gradient-to-br from-gray-50 via-white to-purple-50 py-14 sm:py-14 overflow-hidden">
       {/* Background Pattern */}
@@ -252,9 +264,15 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {SERVICES.map((service, index) => {
             const Icon = service.icon;
+            const isFlipped = flippedCards.has(index);
             return (
               <div key={index} className="group [perspective:1000px]">
-                <div className="relative h-72 w-full rounded-2xl border border-gray-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-hover:scale-105">
+                <div 
+                  className={`relative h-72 w-full rounded-2xl border border-gray-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 [transform-style:preserve-3d] cursor-pointer md:cursor-default ${
+                    isFlipped ? '[transform:rotateY(180deg)] scale-105' : ''
+                  } md:group-hover:[transform:rotateY(180deg)] md:group-hover:scale-105`}
+                  onClick={() => handleCardClick(index)}
+                >
                   {/* Front */}
                   <div className="absolute inset-0 p-8 backface-hidden [transform:rotateY(0deg)] flex flex-col">
                     <div className="h-16 w-16 grid place-items-center rounded-2xl bg-gradient-to-br from-purple-100 to-indigo-100 group-hover:from-purple-200 group-hover:to-indigo-200 transition-colors duration-300">
@@ -266,6 +284,10 @@ export default function Services() {
                     <p className="mt-3 text-xs text-gray-600 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       Explore how we design and deliver this service to match your goals.
                     </p>
+                    {/* Mobile tap indicator */}
+                    <div className="mt-auto text-xs text-purple-600 font-medium md:hidden" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      Tap to see details
+                    </div>
                   </div>
                   {/* Back */}
                   <div className="absolute inset-0 p-8 backface-hidden [transform:rotateY(180deg)] flex flex-col bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl">
@@ -280,6 +302,10 @@ export default function Services() {
                         </li>
                       ))}
                     </ul>
+                    {/* Mobile tap indicator */}
+                    <div className="mt-auto text-xs text-purple-600 font-medium md:hidden" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      Tap to go back
+                    </div>
                   </div>
                 </div>
               </div>
