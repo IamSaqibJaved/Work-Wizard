@@ -11,23 +11,26 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'Work Wizard | Professional Software Development & Automation Services',
-  description: 'Work Wizard offers intelligent automation, project management, and software development services for businesses and academics. Transform your workflow and achieve measurable results with our expert team.',
+  title: 'Work Wizard | Assignment Helper & Academic Assistant - Web Developer Services',
+  description: 'Professional Assignment Helper and Academic Assistant services. Expert web developers providing assignment support, academic coaching, research guidance, and custom software development for students and businesses.',
   icons: {
     icon: [
-      { url: '/favicon-32x32.png?v=4', sizes: '32x32' },
-      { url: '/Logo.png?v=4', type: 'image/png', sizes: '16x16' }
+      { url: '/Logo.png?v=5', type: 'image/png', sizes: '192x192' },
+      { url: '/Logo.png?v=5', type: 'image/png', sizes: '512x512' },
+      { url: '/favicon-32x32.png?v=5', sizes: '32x32' }
     ],
-    shortcut: '/favicon-32x32.png?v=4',
+    shortcut: '/Logo.png?v=5',
     apple: [
-      { url: '/Logo.png?v=4', sizes: '180x180' }
+      { url: '/Logo.png?v=5', sizes: '180x180' }
     ],
   },
   keywords: [
-    'software development', 'automation', 'project management', 'AI solutions', 'business consulting', 
-    'academic research', 'web development', 'digital transformation', 'Work Wizard', 'DreamWeavers LLC',
-    'custom software', 'business automation', 'academic support', 'data analysis', 'web applications',
-    'mobile development', 'cloud solutions', 'AI integration', 'workflow optimization', 'productivity tools'
+    'assignment helper', 'assignment maker', 'academic assistant', 'academic helper', 'web developer',
+    'assignment writing service', 'academic coaching', 'research guidance', 'thesis help', 'dissertation support',
+    'homework help', 'essay writing', 'academic tutoring', 'study support', 'assignment assistance',
+    'software development', 'web development', 'mobile app development', 'UI/UX design', 'data analysis',
+    'academic integrity', 'referencing help', 'editing services', 'proofreading', 'formatting assistance',
+    'Work Wizard', 'DreamWeavers LLC', 'student support', 'academic success', 'professional development'
   ],
   authors: [{ name: 'Work Wizard Team' }],
   creator: 'Work Wizard',
@@ -39,15 +42,15 @@ export const metadata = {
   },
   metadataBase: new URL('https://yourworkwizard.com'),
   openGraph: {
-    title: 'Work Wizard | Professional Software Development & Automation',
-    description: 'Intelligent automation and project management tools for businesses and academics. Transform your workflow and achieve measurable results.',
+    title: 'Work Wizard | Assignment Helper & Academic Assistant Services',
+    description: 'Expert Assignment Helper and Academic Assistant providing assignment support, academic coaching, and web development services. Professional academic assistance for students and businesses.',
     url: 'https://yourworkwizard.com/',
     siteName: 'Work Wizard',
     images: [
       {
         url: '/Logo.png',
-        width: 1200,
-        height: 630,
+        width: 512,
+        height: 512,
         alt: 'Work Wizard - Professional Software Development & Automation',
       },
     ],
@@ -56,8 +59,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Work Wizard | Professional Software Development & Automation',
-    description: 'Intelligent automation and project management tools for businesses and academics. Transform your workflow and achieve measurable results.',
+    title: 'Work Wizard | Assignment Helper & Academic Assistant Services',
+    description: 'Professional Assignment Helper and Academic Assistant services. Expert academic support, assignment assistance, and web development for students and businesses.',
     site: '@WorkWizard',
     creator: '@WorkWizard',
     images: ['/Logo.png'],
@@ -89,57 +92,110 @@ export const metadata = {
   category: 'Technology',
   // Organization structured data (JSON-LD)
   other: {
-    'application/ld+json': JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Work Wizard",
-      "alternateName": "Work Wizard",
-      "url": "https://yourworkwizard.com/",
-      "logo": "https://yourworkwizard.com/Logo.png",
-      "description": "Professional software development, automation, and project management services for businesses and academics. We transform workflows and deliver measurable results.",
-      "foundingDate": "2024",
-      "sameAs": [
-        "https://twitter.com/WorkWizard",
-        "https://linkedin.com/company/workwizard",
-        "https://github.com/workwizard"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "email": "info@yourworkwizard.com",
-        "availableLanguage": "English"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US"
-      },
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 40.7128,
-          "longitude": -74.0060
+    'application/ld+json': JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Work Wizard",
+        "alternateName": ["Assignment Helper", "Academic Assistant", "Academic Helper"],
+        "url": "https://yourworkwizard.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yourworkwizard.com/Logo.png",
+          "width": 512,
+          "height": 512
         },
-        "geoRadius": "10000000"
+        "description": "Professional Assignment Helper and Academic Assistant services. Expert academic support, assignment assistance, research guidance, and web development for students and businesses.",
+        "foundingDate": "2025",
+        "sameAs": [
+          "https://twitter.com/WorkWizard",
+          "https://linkedin.com/company/workwizard",
+          "https://github.com/workwizard"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "yourworkwizard@gmail.com",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "UK"
+        },
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.7128,
+            "longitude": -74.0060
+          },
+          "geoRadius": "10000000"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Assignment Helper Services",
+            "description": "Professional assignment assistance, academic coaching, and research guidance for students"
+          },
+          {
+            "@type": "Offer", 
+            "name": "Academic Assistant Services",
+            "description": "Comprehensive academic support including tutoring, editing, and formatting assistance"
+          },
+          {
+            "@type": "Offer",
+            "name": "Web Development Services",
+            "description": "Custom web development, mobile apps, and software solutions for businesses and academic institutions"
+          },
+          {
+            "@type": "Offer",
+            "name": "Academic Coaching & Tutoring",
+            "description": "One-on-one guidance, exam preparation, and study strategies for academic success"
+          }
+        ]
       },
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Software Development Services",
-          "description": "Custom software development solutions for businesses and academic institutions"
-        },
-        {
-          "@type": "Offer", 
-          "name": "Automation Solutions",
-          "description": "Intelligent automation tools to streamline workflows and increase productivity"
-        },
-        {
-          "@type": "Offer",
-          "name": "Project Management",
-          "description": "Professional project management services for complex technical projects"
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Work Wizard - Assignment Helper & Academic Assistant",
+        "url": "https://yourworkwizard.com/",
+        "description": "Professional Assignment Helper and Academic Assistant services. Expert academic support, assignment assistance, research guidance, and web development for students and businesses.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yourworkwizard.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
-      ]
-    })
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Assignment Helper Services",
+        "description": "Professional assignment assistance, academic coaching, and research guidance for students",
+        "provider": {
+          "@type": "Organization",
+          "name": "Work Wizard"
+        },
+        "serviceType": "Academic Support",
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://yourworkwizard.com/",
+          "serviceSmsNumber": "+1-XXX-XXX-XXXX"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Academic Assistant Services",
+        "description": "Comprehensive academic support including tutoring, editing, and formatting assistance",
+        "provider": {
+          "@type": "Organization",
+          "name": "Work Wizard"
+        },
+        "serviceType": "Academic Tutoring",
+        "areaServed": "Worldwide"
+      }
+    ])
   }
 };
 
@@ -159,6 +215,13 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Work Wizard" />
         <link rel="apple-touch-icon" href="/Logo.png" />
+        {/* Additional logo meta tags for Google */}
+        <meta property="og:image" content="https://yourworkwizard.com/Logo.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="Work Wizard - Assignment Helper & Academic Assistant" />
+        <meta name="twitter:image" content="https://yourworkwizard.com/Logo.png" />
+        <meta name="twitter:image:alt" content="Work Wizard - Assignment Helper & Academic Assistant" />
         {/* SEO meta tags are handled by Next.js metadata above */}
       </head>
       <body className={`min-h-screen bg-white text-black ${montserrat.variable} font-sans`} style={{ fontFamily: 'Montserrat, sans-serif' }}>

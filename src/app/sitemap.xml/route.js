@@ -38,30 +38,6 @@ export async function GET() {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      slug: 'smart-automation-for-academics',
-      lastModified: '2024-09-15T00:00:00.000Z',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      slug: 'designing-accessible-ux',
-      lastModified: '2024-08-02T00:00:00.000Z',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      slug: 'from-idea-to-web-app',
-      lastModified: '2024-07-10T00:00:00.000Z',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      slug: 'data-analysis-for-students',
-      lastModified: '2024-06-21T00:00:00.000Z',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
