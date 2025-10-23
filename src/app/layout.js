@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -167,6 +168,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <WhatsAppButton />
+        <Analytics />
       </body>
     </html>
   );
