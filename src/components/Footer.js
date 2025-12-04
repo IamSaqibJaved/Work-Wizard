@@ -68,7 +68,7 @@ export default function Footer() {
                     Contact Information
                   </h4>
                   <p className="text-gray-400 text-sm leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                    Email: Yourworkwizard@gmail.com<br />
+                    Email: Jawadnawaz61@gmail.com<br />
                     Phone: +44 7380 270004
                   </p>
                 </div>
