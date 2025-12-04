@@ -106,7 +106,7 @@ export default function ContactUs() {
                     <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       Email Address
                     </h4>
-                    <p className="text-gray-600 leading-relaxed font-medium text-sm sm:text-base">Yourworkwizard@gmail.com</p>
+                    <p className="text-gray-600 leading-relaxed font-medium text-sm sm:text-base">Jawadnawaz61@gmail.com</p>
                   </div>
                 </div>
 
